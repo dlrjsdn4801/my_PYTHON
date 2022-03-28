@@ -1,15 +1,13 @@
-lst = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-print(lst)
-
+# 나도코딩 퀴즈용
 from random import *
 
-shuffle(lst)
-print(lst)
+#비슷하게는 한 것 같기는 한데 하ㅏㅏ 복습해야겟다
 
-chk = sample(lst,1)
-cof = sample(lst,3)
-
-print(" -- 당첨자 발표 -- ")
-print(" 치킨 당첨자 : ", chk)
-print(" 커피 당첨자 : ", cof)
-print(" -- 축하합니다 -- ")
+guest = list(range(1,51))
+time = randrange(5,51)
+for t in time:
+    for i in guest:
+        if t <= 15:
+            print("[o] {0}번째 손님 (소요시간 : {1}분)".format(i,t))
+        else:
+            print("[ ] {0}번째 손님 (소요시간 : {1}분)".format(i,t))
